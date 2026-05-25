@@ -179,3 +179,28 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# -----------------
+# CloseUpSOP Bot
+# -----------------
+
+# Secrets
+.env
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
