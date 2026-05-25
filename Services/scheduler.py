@@ -8,6 +8,7 @@ from database import (
 
 from config import (
     GROUP_CHAT_ID,
+    TOPIC_ID,
     TIMEZONE
 )
 
@@ -46,18 +47,17 @@ async def remind_aircons(
             continue
 
         await (
-            bot
-            .send_message(
-                GROUP_CHAT_ID,
-                (
+            bot.send_message(
+                chat_id=GROUP_CHAT_ID,
+                text=(
                     "No one has turned "
                     "OFF the "
                     f"{row['aircon_name']} "
                     "yet.\n\n"
                     "Please do so."
-                )
+                ),
+                message_thread_id=TOPIC_ID
             )
-        )
 
 
 # ==========================
