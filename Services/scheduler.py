@@ -58,6 +58,7 @@ async def remind_aircons(
                 ),
                 message_thread_id=TOPIC_ID
             )
+        )
 
 
 # ==========================
